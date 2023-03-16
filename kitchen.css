@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section{
+    position:absolute;
+    width:100%;
+    min-height:100vh;
+    padding:100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#161616;
+}
+section .circle{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    clip-path:circle(50% at right -33%);
+}
+header {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header .logo{
+    position:relative;
+    max-width:250px;
+    max-height:150px;
+}
+header .nav{
+    position:relative;
+    display:flex;
+}
+header .nav li{
+    list-style:none;
+}
+header .nav li a{
+    display:inline-block;
+    color:pink;
+    font-weight:500;
+    text-decoration:none;
+    margin-left:40px;
+}
+.video{
+    position:absolute;
+    right:0;
+    margin:0;
+    z-index:0;
+}
+@media(min-aspect-ratio:16/9){
+    .video{
+        width:100%;
+        height:auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .video{
+        width:auto;
+        height:100%;
+    }
+}
+.container{
+    position:absolute;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container .text-box{
+    position:relative;
+    max-width:600px;
+    margin-right:16px;
+}
+.container .text-box h2{
+    color:rgb(138, 11, 33);
+    font-size:50px;
+    margin-bottom:10px;
+    backdrop-filter:blur (20px);
+}
+.container .text-box p{
+    color:pink;
+}
+.container .text-box a{
+    display:inline-flex;
+    font-weight:500px;
+    color:rgb(136, 19, 74);
+    border:2px solid pink;
+    border-radius:50px;
+    background:rgb(0,0,0,0.4);
+    padding:10px 30px;
+    transition:0.05s;
+    text-align:center;
+    justify-content:center; 
+}
+.container .text-box a:hover{
+    color:black;
+    background:transparent;
+}
+.me{
+    position:absolute;
+    bottom:40px;
+    left:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.me li{
+    list-style:none;
+}
+.me li a{
+    display:inline-block;
+    margin-left:15px;
+    background:black;
+    width:50px;
+    height:50px;
+}
